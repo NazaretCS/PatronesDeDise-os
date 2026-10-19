@@ -41,26 +41,9 @@ Los cinco patrones están conectados: `pasajeComponent` es a la vez el *Producto
     └── Presentacion_Trabajo_Final.pptx    Presentación usada en la defensa
 ```
 
-## Requisitos
+## Escenarios de demostración
 
-Solo un compilador con soporte para C++17 (g++, clang++ o MSVC). No usa librerías externas.
-
-## Compilación y ejecución
-
-Desde la carpeta principal del repositorio:
-
-```bash
-g++ -std=c++17 -Wall -Wextra -pedantic src/*.cpp -o aerolinea
-./aerolinea
-```
-
-Compila sin advertencias con `-Wall -Wextra -pedantic` y se verificó con `-fsanitize=address,undefined`, sin errores de memoria ni fugas.
-
-> En Windows con MinGW, si el ejecutable no encuentra las DLL de la biblioteca estándar, agregar `-static` al comando de compilación.
-
-## Salida esperada
-
-El programa no recibe parámetros; imprime en la terminal ocho bloques que demuestran, en orden:
+Al ejecutarse, `main.cpp` recorre ocho escenarios que muestran cada patrón en funcionamiento, en orden:
 
 1. **Singleton:** dos llamadas a `obtenerInstancia()` devuelven la misma dirección.
 2. **Factory Method:** dos pasajes distintos emitidos con la misma llamada, cambiando solo la fábrica concreta.
