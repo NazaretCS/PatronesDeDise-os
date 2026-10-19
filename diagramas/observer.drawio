@@ -1,0 +1,269 @@
+<mxfile host="app.diagrams.net" agent="uml-gen">
+  <diagram name="Observer" id="Observer">
+    <mxGraphModel dx="1717" dy="938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cls1" parent="1" style="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=72;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#FFFFFF;whiteSpace=wrap;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="«abstract»&lt;br&gt;&lt;b&gt;sujeto&lt;/b&gt;" vertex="1">
+          <mxGeometry height="212" width="395" x="632" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" parent="cls1" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="# observadores: vector&lt;observadorVuelo&gt;" vertex="1">
+          <mxGeometry height="24" width="395" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" parent="cls1" style="line;strokeWidth=1;spacingLeft=3;spacingRight=3;rotatable=0;points=[];" value="" vertex="1">
+          <mxGeometry height="20" width="395" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" parent="cls1" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="+ suscribir(o: observadorVuelo) void" vertex="1">
+          <mxGeometry height="24" width="395" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" parent="cls1" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="+ desuscribir(o: observadorVuelo) void" vertex="1">
+          <mxGeometry height="24" width="395" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" parent="cls1" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="# notificar(ev: eventoVuelo) void" vertex="1">
+          <mxGeometry height="24" width="395" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="cls7" parent="1" style="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#FFFFFF;whiteSpace=wrap;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="&lt;b&gt;vuelo&lt;/b&gt;" vertex="1">
+          <mxGeometry height="356" width="500" x="580" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="r8" parent="cls7" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- idVuelo: string" vertex="1">
+          <mxGeometry height="24" width="500" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r9" parent="cls7" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- origen: string" vertex="1">
+          <mxGeometry height="24" width="500" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="r10" parent="cls7" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- destino: string" vertex="1">
+          <mxGeometry height="24" width="500" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="r11" parent="cls7" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- fecha: date" vertex="1">
+          <mxGeometry height="24" width="500" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="r12" parent="cls7" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- puertaEmbarque: string" vertex="1">
+          <mxGeometry height="24" width="500" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="r13" parent="cls7" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- asientosDisponibles: int" vertex="1">
+          <mxGeometry height="24" width="500" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="r11b" parent="cls7" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=#333333;" value="- hora: time" vertex="1">
+          <mxGeometry height="24" width="500" y="204" as="geometry" />
+        </mxCell>
+        <mxCell id="l14" parent="cls7" style="line;strokeWidth=1;spacingLeft=3;spacingRight=3;rotatable=0;points=[];" value="" vertex="1">
+          <mxGeometry height="20" width="500" y="228" as="geometry" />
+        </mxCell>
+        <mxCell id="r15" parent="cls7" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="+ reprogramar(nuevaFecha: date, nuevaHora: time, motivo: string) void" vertex="1">
+          <mxGeometry height="24" width="500" y="248" as="geometry" />
+        </mxCell>
+        <mxCell id="r16" parent="cls7" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="+ cambiarPuerta(nuevaPuerta: string) void" vertex="1">
+          <mxGeometry height="24" width="500" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="r19" parent="cls7" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="+ getId() string" vertex="1">
+          <mxGeometry height="24" width="500" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="r_cancelarVuelo" parent="cls7" style="text;fontSize=16;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontColor=#333333;" value="+ cancelarVuelo(motivo: string) void" vertex="1">
+          <mxGeometry height="24" width="500" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="cls20" parent="1" style="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=72;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#FFFFFF;whiteSpace=wrap;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="«interface»&lt;br&gt;&lt;b&gt;observadorVuelo&lt;/b&gt;" vertex="1">
+          <mxGeometry height="140" width="320" x="1240" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="l21" parent="cls20" style="line;strokeWidth=1;spacingLeft=3;spacingRight=3;rotatable=0;points=[];" value="" vertex="1">
+          <mxGeometry height="20" width="320" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="r22" parent="cls20" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;fontStyle=2;" value="+ actualizar(ev: eventoVuelo) void" vertex="1">
+          <mxGeometry height="24" width="320" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="cls23" parent="1" style="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#FFFFFF;whiteSpace=wrap;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="&lt;b&gt;pasajero&lt;/b&gt;" vertex="1">
+          <mxGeometry height="188" width="320" x="1115" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="r24" parent="cls23" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- nombre: string" vertex="1">
+          <mxGeometry height="24" width="320" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r25" parent="cls23" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- documento: string" vertex="1">
+          <mxGeometry height="24" width="320" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="r26" parent="cls23" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- email: string" vertex="1">
+          <mxGeometry height="24" width="320" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="l27" parent="cls23" style="line;strokeWidth=1;spacingLeft=3;spacingRight=3;rotatable=0;points=[];" value="" vertex="1">
+          <mxGeometry height="20" width="320" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="r28" parent="cls23" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="+ actualizar(ev: eventoVuelo) void" vertex="1">
+          <mxGeometry height="24" width="320" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="cls29" parent="1" style="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#FFFFFF;whiteSpace=wrap;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="&lt;b&gt;pantallaAeropuerto&lt;/b&gt;" vertex="1">
+          <mxGeometry height="140" width="320" x="1465" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="r30" parent="cls29" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- sector: string" vertex="1">
+          <mxGeometry height="24" width="320" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l31" parent="cls29" style="line;strokeWidth=1;spacingLeft=3;spacingRight=3;rotatable=0;points=[];" value="" vertex="1">
+          <mxGeometry height="20" width="320" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="r32" parent="cls29" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="+ actualizar(ev: eventoVuelo) void" vertex="1">
+          <mxGeometry height="24" width="320" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="cls33" parent="1" style="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=48;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#FFFFFF;whiteSpace=wrap;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="&lt;b&gt;eventoVuelo&lt;/b&gt;" vertex="1">
+          <mxGeometry height="284" width="460" x="600" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="r34" parent="cls33" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- idVuelo: string" vertex="1">
+          <mxGeometry height="24" width="460" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="r35" parent="cls33" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- tipo: tipoEvento" vertex="1">
+          <mxGeometry height="24" width="460" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="r36" parent="cls33" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- nuevoHorario: string" vertex="1">
+          <mxGeometry height="24" width="460" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="r37" parent="cls33" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- nuevaPuerta: string" vertex="1">
+          <mxGeometry height="24" width="460" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="r38" parent="cls33" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="- motivo: string" vertex="1">
+          <mxGeometry height="24" width="460" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="l39" parent="cls33" style="line;strokeWidth=1;spacingLeft=3;spacingRight=3;rotatable=0;points=[];" value="" vertex="1">
+          <mxGeometry height="20" width="460" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="r40" parent="cls33" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="+ eventoVuelo(id: string, t: tipoEvento, dato: string)" vertex="1">
+          <mxGeometry height="24" width="460" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="r41" parent="cls33" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="+ getTipo() tipoEvento" vertex="1">
+          <mxGeometry height="24" width="460" y="224" as="geometry" />
+        </mxCell>
+        <mxCell id="r42" parent="cls33" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="+ getMensaje() string" vertex="1">
+          <mxGeometry height="24" width="460" y="248" as="geometry" />
+        </mxCell>
+        <mxCell id="cls43" parent="1" style="swimlane;html=1;fontStyle=0;fontSize=16;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=72;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#FFFFFF;whiteSpace=wrap;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="«enumeration»&lt;br&gt;&lt;b&gt;tipoEvento&lt;/b&gt;" vertex="1">
+          <mxGeometry height="188" width="195" x="1150" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="l44" parent="cls43" style="line;strokeWidth=1;spacingLeft=3;spacingRight=3;rotatable=0;points=[];" value="" vertex="1">
+          <mxGeometry height="20" width="195" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="r45" parent="cls43" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="REPROGRAMACION" vertex="1">
+          <mxGeometry height="24" width="195" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="r46" parent="cls43" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="CAMBIO_PUERTA" vertex="1">
+          <mxGeometry height="24" width="195" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="r47" parent="cls43" style="text;fontSize=16;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=12;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="CANCELACION" vertex="1">
+          <mxGeometry height="24" width="195" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="e52" edge="1" parent="1" source="cls7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=14;fontColor=#333333;labelBackgroundColor=#FFFFFF;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;endArrow=block;endSize=16;endFill=0;html=1;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="cls1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e53" edge="1" parent="1" source="cls1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=14;fontColor=#333333;labelBackgroundColor=#FFFFFF;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;startArrow=diamondThin;startSize=16;startFill=0;endArrow=none;html=1;exitX=1;exitY=0.4245;entryX=0;entryY=0.6429;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="cls20" value="observadores">
+          <mxGeometry relative="1" x="0.061" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el54" connectable="0" parent="e53" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontColor=#333333;labelBackgroundColor=#FFFFFF;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.76" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="el55" connectable="0" parent="e53" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;fontColor=#333333;labelBackgroundColor=#FFFFFF;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.76" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e56" edge="1" parent="1" source="cls23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=14;fontColor=#333333;labelBackgroundColor=#FFFFFF;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;endArrow=block;endSize=16;endFill=0;dashed=1;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="cls20" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1275" y="490" />
+              <mxPoint x="1320" y="490" />
+            </Array>
+            <mxPoint x="1290" y="510" as="sourcePoint" />
+            <mxPoint x="1290" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e57" edge="1" parent="1" source="cls29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=14;fontColor=#333333;labelBackgroundColor=#FFFFFF;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;endArrow=block;endSize=16;endFill=0;dashed=1;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="cls20" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1625" y="480" />
+              <mxPoint x="1400" y="480" />
+            </Array>
+            <mxPoint x="1650" y="620" as="sourcePoint" />
+            <mxPoint x="1420" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e58" edge="1" parent="1" source="cls7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=14;fontColor=#333333;labelBackgroundColor=#FFFFFF;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;endArrow=open;endSize=12;dashed=1;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="cls33" value="crea">
+          <mxGeometry relative="1" x="0.1489" y="-30" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e59" edge="1" parent="1" source="cls33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;fontSize=14;fontColor=#333333;labelBackgroundColor=#FFFFFF;fontFamily=Trebuchet MS,Verdana,Arial,sans-serif;endArrow=open;endSize=12;dashed=1;html=1;exitX=1;exitY=0.33;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="cls43" value="usa&amp;nbsp;">
+          <mxGeometry relative="1" x="0.0819" y="-15" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-19" edge="1" parent="1" source="dI1nyMv3SdLfcjmsKhrS-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=290;exitDy=39;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="r6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-5" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;fontSize=12;align=left;verticalAlign=top;spacingLeft=8;spacingTop=2;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Courier New,monospace;fontColor=#333333;" value="notificar(ev):&lt;br&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;para cada o en observadores:&lt;br&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;o.actualizar(ev)&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="290" x="243" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-13" edge="1" parent="1" source="dI1nyMv3SdLfcjmsKhrS-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="r28" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-8" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;fontSize=12;align=left;verticalAlign=top;spacingLeft=8;spacingTop=2;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontFamily=Courier New,monospace;" value="actualizar(ev):&lt;br&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;notificarPorEmail(email, ev.getMensaje())&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="52" width="390" x="1120" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-21" edge="1" parent="1" source="dI1nyMv3SdLfcjmsKhrS-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=250;exitDy=35;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="r4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-15" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;fontSize=12;align=left;verticalAlign=top;spacingLeft=8;spacingTop=2;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Courier New,monospace;fontColor=#333333;" value="suscribir(o):&lt;br&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;si o NO esta en observadores:&lt;br&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;observadores.agregar(o)" vertex="1">
+          <mxGeometry height="52" width="250" x="283" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-20" edge="1" parent="1" source="dI1nyMv3SdLfcjmsKhrS-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=270;exitDy=35;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="r5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-18" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;fontSize=12;align=left;verticalAlign=top;spacingLeft=8;spacingTop=2;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Courier New,monospace;fontColor=#333333;" value="desuscribir(o):&lt;br&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;si o esta en observadores:&lt;br&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;observadores.quitar(o)" vertex="1">
+          <mxGeometry height="52" width="270" x="263" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-29" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=368;exitDy=104;exitPerimeter=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="r15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="548.17" y="450" />
+              <mxPoint x="548.17" y="686" />
+              <mxPoint x="560" y="686" />
+              <mxPoint x="560" y="678" />
+              <mxPoint x="580" y="678" />
+            </Array>
+            <mxPoint x="516.5" y="450" as="sourcePoint" />
+            <mxPoint x="830" y="677.9999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-24" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;fontSize=12;align=left;verticalAlign=top;spacingLeft=8;spacingTop=2;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Courier New,monospace;fontColor=#333333;" value="reprogramar(nuevaFecha, nuevaHora, motivo):&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;SI nuevaFecha &amp;lt; HOY O&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;(nuevaFecha == HOY Y nuevaHora &amp;lt; AHORA)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ENTONCES&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;LANZAR excepcion(&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&quot;Fecha/hora invalida&quot;)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;fecha = nuevaFecha&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;hora = nuevaHora&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ev = new eventoVuelo(idVuelo,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;REPROGRAMACION, fecha + &quot; &quot; + hora)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;notificar(ev)" vertex="1">
+          <mxGeometry height="190" width="368" x="148.5" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-30" edge="1" parent="1" source="dI1nyMv3SdLfcjmsKhrS-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=295;exitDy=50.99999999999999;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="r16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="498" y="675" />
+              <mxPoint x="530" y="675" />
+              <mxPoint x="530" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-25" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;fontSize=12;align=left;verticalAlign=top;spacingLeft=8;spacingTop=2;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Courier New,monospace;fontColor=#333333;" value="cambiarPuerta(nuevaPuerta):&lt;br&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;puertaEmbarque = nuevaPuerta&lt;br&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ev = new eventoVuelo(idVuelo,&lt;br&gt;             &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;CAMBIO_PUERTA, nuevaPuerta)&lt;br&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;notificar(ev)" vertex="1">
+          <mxGeometry height="84" width="295" x="203" y="624" as="geometry" />
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-35" edge="1" parent="1" source="dI1nyMv3SdLfcjmsKhrS-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=404;exitDy=67.25;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="r40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dI1nyMv3SdLfcjmsKhrS-34" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;fontSize=12;align=left;verticalAlign=top;spacingLeft=8;spacingTop=2;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Courier New,monospace;fontColor=#333333;" value="eventoVuelo(id, t, dato):  [constructor]&lt;br&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;idVuelo = id&lt;br&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;tipo = t&lt;br&gt;    &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;segun tipo:&lt;br&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;REPROGRAMACION: nuevoHorario = dato&lt;br&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;CAMBIO_PUERTA:  nuevaPuerta = dato&lt;br&gt;        &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;CANCELACION:    motivo = dato" vertex="1">
+          <mxGeometry height="116.5" width="404" x="148.5" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="n_vuelo_cancelarVuelo" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;fontSize=12;align=left;verticalAlign=top;spacingLeft=8;spacingTop=2;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Courier New,monospace;fontColor=#333333;" value="cancelarVuelo(motivo):&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ev = new eventoVuelo(idVuelo,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;CANCELACION, motivo)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;notificar(ev)" vertex="1">
+          <mxGeometry height="84" width="270" x="220" y="726" as="geometry" />
+        </mxCell>
+        <mxCell id="e_vuelo_cancelarVuelo" edge="1" parent="1" source="n_vuelo_cancelarVuelo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="r_cancelarVuelo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_pantalla_actualizar" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=18;fontSize=12;align=left;verticalAlign=top;spacingLeft=8;spacingTop=2;fillColor=#f5f5f5;strokeColor=#666666;fontFamily=Courier New,monospace;fontColor=#333333;" value="actualizar(ev):&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;mostrarEnPantalla(sector, ev.getMensaje())" vertex="1">
+          <mxGeometry height="60" width="340" x="1530" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="e_pantalla_actualizar" edge="1" parent="1" source="n_pantalla_actualizar" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="r32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

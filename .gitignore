@@ -1,0 +1,36 @@
+# Ejecutables y binarios de compilación
+aerolinea
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.pdb
+*.ilk
+build/
+bin/
+obj/
+
+# Archivos del sistema operativo
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Editores e IDEs
+.vscode/
+.idea/
+.vs/
+*.swp
+*~
+
+# Temporales de Office y draw.io
+~$*
+*.tmp
+*.bkp
+.$*.drawio
+*.drawio.bkp
