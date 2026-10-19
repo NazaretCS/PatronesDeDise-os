@@ -28,17 +28,17 @@ Los cinco patrones están conectados: `pasajeComponent` es a la vez el *Producto
 
 ```
 ├── README.md
-├── src/                                   Código fuente en C++17 (una clase por par .h/.cpp)
-│   └── main.cpp                           Cliente: recorre los 8 escenarios de demostración
-├── diagramas/                             Diagramas UML detallados (.jpg para ver, .drawio editables)
+├── src/                                                     Código fuente en C++17 (una clase por par .h/.cpp)
+│   └── main.cpp                                             Cliente: recorre los 8 escenarios de demostración
+├── diagramas/                                               Diagramas UML detallados (.jpg para ver, .drawio editables)
 │   ├── factory_method.*
 │   ├── decorator.*
 │   ├── state_singleton.*
 │   └── observer.*
 └── docs/
-    ├── Consigna_Trabajo_Final.pdf         Consigna de la cátedra
-    ├── Informe_Trabajo_Final.docx         Informe: requerimientos, diagramas y decisiones de diseño
-    └── Presentacion_Trabajo_Final.pptx    Presentación usada en la defensa
+    ├── Consigna_Trabajo_Final.pdf                           Consigna de la cátedra
+    ├── Informe_Sistema_Gestion_Vuelos_Patrones_de_Diseno.docx   Informe: requerimientos, diagramas y decisiones de diseño
+    └── Presentacion_Trabajo_Final.pptx                      Presentación usada en la defensa
 ```
 
 ## Escenarios de demostración
@@ -125,4 +125,4 @@ Cada clase del código corresponde exactamente a una clase del diagrama, con los
 - **Interfaces en C++.** `pasajeComponent`, `estadoPasaje` y `observadorVuelo` son clases con métodos virtuales puros y destructor virtual. Sin este último, borrar un `pasajeComponent*` que apunta a un `accesoVIP` no destruiría la pila de decoradores.
 - **Propiedad de los objetos.** `sistemaAerolinea` *compone* los vuelos y los libera; cada decorador es dueño del componente que envuelve; `sujeto` solo *agrega* a sus observadores (por eso `desuscribir()` es indispensable); los estados no los crea ni destruye ningún pasaje.
 
-El análisis completo está en el [informe](docs/Informe_Trabajo_Final.docx).
+El análisis completo está en el [informe](docs/Informe_Sistema_Gestion_Vuelos_Patrones_de_Diseno.docx).
